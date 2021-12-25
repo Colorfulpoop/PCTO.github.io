@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Rampart+One&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #fff;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+
+
+.logo-image{
+    position: relative;
+    overflow: hidden;
+    
+}
+
+header nav {
+    position: relative;
+}
+
+header nav ul {
+    position: relative;
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    position: relative;
+    display: inline-block;
+    background: #F05454;
+    color: #fff;
+    font-size: 20px;
+    padding: 15px 35px;
+    text-decoration: none;
+    border-radius: 100px;
+}
+
+header nav ul li a:hover {
+    color: black;
+}
+
+section {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 100px;
+}
+
+section .contentBx {
+    position: relative;
+    max-width:  600px;
+    z-index: 1000;
+}
+
+section .contentBx h2 {
+    font-size: 55px;
+    color: #F05454;
+    text-transform: uppercase;
+}
+
+section .contentBx p {
+    font-size: 18px;
+    color: #121212;
+}
+
+section .contentBx .countdown {
+    display: flex;
+    margin: 20px 0;
+}
+
+section .contentBx .countdown .time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F05454;
+    margin-right: 20px;
+    font-size: 48px;
+    min-width: 110px;
+    font-weight: 700;
+    padding: 10px 5px 15px;
+    border-radius: 4px;
+    color: #fff;
+}
+
+section .contentBx .countdown .time span {
+    margin-top:  -10px;
+    font-size:  20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+section .contentBx a {
+    position: relative;
+    margin-top: 10px;
+    display: inline-block;
+    background: #F05454;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 15px 35px;
+    text-decoration: none;
+    border-radius: 40px;
+}
+
+section .contentBx a:hover{
+    color: black;
+}
+
+section .imgBx{
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    margin-top: 100px;
+    z-index: 2;
+
+}
+section .waves {
+    position: absolute;
+    bottom: 0;
+    right:0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.newsLetter {
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    padding: 60px;
+    background-color: #fff;
+    z-index: 10000;
+    box-shadow:  0 0 0 100vh rgba( 49, 39, 71, 0.95);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    border-radius:  35px;
+
+}
+
+.newsLetter.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.newsLetter h2 {
+    font-size: 48px;
+    color: #121212;
+}
+
+.newsLetter p{
+    font-size: 20px;
+    color: #121212;
+}
+
+.newsLetter .inputBx {
+    margin-top: 20px;
+}
+
+.newsLetter .inputBx input {
+    padding: 10px;
+    outline: none;
+    width: 300px;
+    font-size: 18px;
+    border: 1px solid #999;
+
+}
+
+.newsLetter .inputBx input[type="button"] {
+    padding: 10px;
+    outline: none;
+    width: 140px;
+    color: #121212;
+    background-color: #F05454;
+    border: 1px solid #F05454;
+    letter-spacing: 2px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.newsLetter .close {
+    position:absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+
+}
+
+@media (max-width: 991px){
+    section {
+        flex-direction: column;
+        padding-top:150px;
+        height: auto;
+    }
+
+    section .contentBx {
+        max-width: 100%;
+    }
+
+    seciont .imgBx img{
+        margin-top: 0;
+
+    }
+}
+
+@media (max-width: 768px) {
+    header{
+        padding: 20px 50px;
+    }
+    
+    section {
+        flex-direction: column;
+        padding:  120px 50px 100px; 
+        height: auto;
+    }
+
+    section .contentBx h2{
+        font-size: 40px;
+    }
+
+    section .contentBx p{
+        font-size: 16px;
+    }
+    
+    section .contentBx .countdown {
+        margin-right: auto;
+    }
+
+    section .contentBx .countdown .time{
+        font-size: 30px;
+        min-height: 70px;
+        margin-right: 5px;
+    }
+    
+    section .contentBx .countdown .time span{
+        font-size: 14px;
+    }
+
+    section .contentBx a{
+        position: relative;
+        margin-top: 10px;
+        display: inline-block;
+        background: #F05454;
+        color: #fff;
+        font-size: 16px;
+        letter-spacing: 2px;
+        padding: 10px 25px;
+        text-decoration: none;
+        border-radius: 40px;
+    }
+
+    .newsLetter {
+        width:90%;
+        padding: 30px;
+
+    }
+    
+    .newsLetter .inputBx input{
+        margin-top: 10px;
+        width: 100%;
+    }
+    
+    .newsLetter h2 {
+        font-size: 36px;
+    }
+
+
+
+}
+
+@media (max-width: 576px){
+     section .contentBx .countdown{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    section .contentBx .countdown .time {
+        margin-top: 10px;
+        width: 50%;
+        align-items: center;
+    }
+
+    section .contentBx h2 {
+        font-size: 30px;
+    }
+
+    section .contentBx a {
+        position: relative;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    section .contentBx .lancia{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .newsLetter h2 {
+        font-size: 26px;
+    }
+
+    header nav ul li a {
+        font-size: 15px;
+    }
+}
